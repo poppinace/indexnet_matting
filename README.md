@@ -1,2 +1,2 @@
-# indexnet
-Indices Matter: Learning to Index for Deep Image Matting
+# IndexNet
+Code's coming soon!
