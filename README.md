@@ -3,7 +3,7 @@
 
 Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 
-By [Hao Lu](https://sites.google.com/site/poppinace/)<sup>1</sup>, [Yutong Dai]<sup>1</sup>, [Chunhua Shen](http://cs.adelaide.edu.au/~chhshen/)<sup>1</sup>, [Songcen Xu]<sup>2</sup>
+By [Hao Lu](https://sites.google.com/site/poppinace/)<sup>1</sup>, Yutong Dai<sup>1</sup>, [Chunhua Shen](http://cs.adelaide.edu.au/~chhshen/)<sup>1</sup>, Songcen Xu<sup>2</sup>
 
 <sup>1</sup>The University of Adelaide, Australia
 
