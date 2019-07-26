@@ -1,4 +1,4 @@
-# IndexNet
+# IndexNet Matting
 **Indices Matter: Learning to Index for Deep Image Matting**
 
 Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
