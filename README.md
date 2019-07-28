@@ -1,4 +1,5 @@
 # IndexNet Matting
+This repository includes the official implementation of IndexNet Matting for deep image matting, presented in our paper:
 **Indices Matter: Learning to Index for Deep Image Matting**
 
 Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
