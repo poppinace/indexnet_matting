@@ -33,14 +33,14 @@ We have included our pretrained model in `./pretrained` and a testing image and 
 ```
 -->Combined_Dataset
     -->Training_set
-        -->alpha
-        -->fg
-        -->merged
+        -->alpha (431 images)
+        -->fg (431 images)
+        -->merged (43100 images)
     -->Test_set
-        -->alpha
-        -->fg
-        -->merged
-        -->trimaps
+        -->alpha (50 images)
+        -->fg (50 images)
+        -->merged (1000 images)
+        -->trimaps (1000 images)
 ```
 ## Code will be coming soon!
 
