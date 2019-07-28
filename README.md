@@ -14,10 +14,10 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 ## Highlights
 - **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
 - **Memory-efficient:** IndexNet Matting builds upon MobileNetV2. It can process an image with a resolution up to 1980x1080 on a single GTX 1070;
-- **Compatible:** This framework also includes our re-implementation of DeepMatting and the pretrained model presented in the Adobe's CVPR17 paper.
+- **Easy to use:** This framework also includes our re-implementation of DeepMatting and the pretrained model presented in the Adobe's CVPR17 paper.
 
 ## Installation
-Our code has been tested on Python 3.6.8/3.7.2 and PyTorch 0.4.1/1.1.0. Please follow the official instructions to configure the environment. See other required packages in `requirements.txt`.
+Our code has been tested on Python 3.6.8/3.7.2 and PyTorch 0.4.1/1.1.0. Please follow the official instructions to configure your environment. See other required packages in `requirements.txt`.
 
 ## A Quick Demo
 We have included our pretrained model in `./pretrained` and a testing image and a trimap from the Adobe Image Dataset in `./examples`. Run the following command for a quick demonstration of IndexNet Matting. The inferred alpha matte is in the folder `./examples/mattes`.
