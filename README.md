@@ -61,6 +61,8 @@ Here is the results of IndexNet Matting and our reproduced results of Deep Matti
 | Deep Matting | Re-implementation | 130.55M | 32.34 | 55.8 | 0.018 | 34.6 | 56.8 | [Google Drive](https://drive.google.com/open?id=1Uws86AGkFqV2S7XkNuR8dz5SOttxh7AY) |
 | IndexNet Matting | Ours | 8.15M | 6.30 | 45.8 | 0.013 | 25.9 | 43.7 | Included |
 
+* The evaluation code (Matlab) placed in the ``./evaluation_code`` folder is used to report the final performance for a fair comparion. We have also implemented a python version. The numerial difference is subtle.
+
 ## Citation
 If you find this work or code useful for your research, please cite:
 ```
@@ -72,4 +74,4 @@ If you find this work or code useful for your research, please cite:
 }
 ```
 ## Disclaimer
-As covered by the ADOBE IMAGE DATASET LICENSE AGREEMENT, the trained models included in this repository can only be used and distributed for non-commercial purposes.
+As covered by the ADOBE IMAGE DATASET LICENSE AGREEMENT, the trained models included in this repository can only be used and distributed for non-commercial purposes. Anyone who violates this rule will be at his/her own risk.
