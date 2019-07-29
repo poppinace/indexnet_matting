@@ -12,15 +12,15 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
 ## Highlights
-- **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the DeepMatting baseline;
+- **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
 - **Memory-efficient:** IndexNet Matting builds upon MobileNetV2. It can process an image with a resolution up to 1980x1080 on a single GTX 1070;
-- **Easy to use:** This framework also includes our re-implementation of DeepMatting and the pretrained model presented in the Adobe's CVPR17 paper.
+- **Easy to use:** This framework also includes our re-implementation of Deep Matting and the pretrained model presented in the Adobe's CVPR17 paper.
 
 ## Installation
 Our code has been tested on Python 3.6.8/3.7.2 and PyTorch 0.4.1/1.1.0. Please follow the official instructions to configure your environment. See other required packages in `requirements.txt`.
 
 ## A Quick Demo
-We have included our pretrained model in `./pretrained` and a testing image and a trimap from the Adobe Image Dataset in `./examples`. Run the following command for a quick demonstration of IndexNet Matting. The inferred alpha matte is in the folder `./examples/mattes`.
+We have included our pretrained model in `./pretrained` and several images and trimaps from the Adobe Image Dataset in `./examples`. Run the following command for a quick demonstration of IndexNet Matting. The inferred alpha mattes are in the folder `./examples/mattes`.
 
     python scripts/demo.py
     
@@ -42,9 +42,30 @@ We have included our pretrained model in `./pretrained` and a testing image and 
         -->merged (1000 images)
         -->trimaps (1000 images)
 ```
+
+## Inference
+Run the following command to do inference of IndexNet Matting/Deep Matting on the Adobe Image Matting dataset:
+
+    python scripts/demo_indexnet_matting.py
+    
+    python scripts/demo_deep_matting.py
+    
+Please note that:
+- `DATA_DIR` should be modified to your dataset directory;
+- Images used in Deep Matting has been downsampled by 1/2 to enable the GPU inference. To reproduce the full-resolution results, the inference should be executed on CPU, which takes about 2 days.
+
+Here is the results of IndexNet Matting and our reproduced results of Deep Matting on the Adobe Image Dataset:
+
+| Methods | Remark | #Param. | GFLOPs | SAD | MSE | Grad | Conn | Model |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| Deep Matting | Paper | -- | -- | 54.6 | 0.017 | 36.7 | 55.3 | -- |
+| Deep Matting | Re-implementation | 130.55M | 32.34 | 55.8 | 0.018 | 34.6 | 56.8 | [Google Drive](https://drive.google.com/open?id=1Uws86AGkFqV2S7XkNuR8dz5SOttxh7AY) |
+| IndexNet Matting | Ours | 8.15M | 6.30 | 45.8 | 0.013 | 25.9 | 43.7 | Included |
+
 ## Code will be coming soon!
 
 ## References
+If our code is useful for your research, please cite:
 ```
 @inproceedings{hao2019indexnet,
   title={Indices Matter: Learning to Index for Deep Image Matting},
