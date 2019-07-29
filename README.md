@@ -29,19 +29,18 @@ We have included our pretrained model in `./pretrained` and several images and t
 2. Composite the dataset using provided foreground images, alpha mattes, and background images from the COCO and Pascal VOC datasets. I slightly modified the provided `compositon_code.py` to improve the efficiency, included in the `scripts` folder. Note that, since the image resolution is quite high, the dataset will be over 100 GB after composition.
 3. The final path structure used in my code looks like this:
 
-
-```
--->Combined_Dataset
-    -->Training_set
-        -->alpha (431 images)
-        -->fg (431 images)
-        -->merged (43100 images)
-    -->Test_set
-        -->alpha (50 images)
-        -->fg (50 images)
-        -->merged (1000 images)
-        -->trimaps (1000 images)
-```
+````bash
+$PATH_TO_DATASET/Combined_Dataset
+├────Training_set
+|    ├────alpha (431 images)
+|    ├────fg (431 images)
+|    ├────merged (43100 images)
+├────Test_set
+|    ├────alpha (50 images)
+|    ├────fg (50 images)
+|    ├────merged (1000 images)
+|    ├────trimaps (1000 images)
+````
 
 ## Inference
 Run the following command to do inference of IndexNet Matting/Deep Matting on the Adobe Image Matting dataset:
@@ -52,7 +51,7 @@ Run the following command to do inference of IndexNet Matting/Deep Matting on th
     
 Please note that:
 - `DATA_DIR` should be modified to your dataset directory;
-- Images used in Deep Matting has been downsampled by 1/2 to enable the GPU inference. To reproduce the full-resolution results, the inference should be executed on CPU, which takes about 2 days.
+- Images used in Deep Matting has been downsampled by 1/2 to enable the GPU inference. To reproduce the full-resolution results, the inference can be executed on CPU, which takes about 2 days.
 
 Here is the results of IndexNet Matting and our reproduced results of Deep Matting on the Adobe Image Dataset:
 
@@ -62,10 +61,8 @@ Here is the results of IndexNet Matting and our reproduced results of Deep Matti
 | Deep Matting | Re-implementation | 130.55M | 32.34 | 55.8 | 0.018 | 34.6 | 56.8 | [Google Drive](https://drive.google.com/open?id=1Uws86AGkFqV2S7XkNuR8dz5SOttxh7AY) |
 | IndexNet Matting | Ours | 8.15M | 6.30 | 45.8 | 0.013 | 25.9 | 43.7 | Included |
 
-## Code will be coming soon!
-
-## References
-If our code is useful for your research, please cite:
+## Citation
+If you find this work or code useful for your research, please cite:
 ```
 @inproceedings{hao2019indexnet,
   title={Indices Matter: Learning to Index for Deep Image Matting},
@@ -74,4 +71,5 @@ If our code is useful for your research, please cite:
   year={2019}
 }
 ```
-
+## Disclaimer
+As covered by the ADOBE IMAGE DATASET LICENSE AGREEMENT, the trained models included in this repository can only be used and distributed for non-commercial purposes.
