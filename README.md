@@ -12,7 +12,7 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
 ## Highlights
-- **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
+- **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the DeepMatting baseline;
 - **Memory-efficient:** IndexNet Matting builds upon MobileNetV2. It can process an image with a resolution up to 1980x1080 on a single GTX 1070;
 - **Easy to use:** This framework also includes our re-implementation of DeepMatting and the pretrained model presented in the Adobe's CVPR17 paper.
 
