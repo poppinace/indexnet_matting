@@ -31,15 +31,15 @@ We have included our pretrained model in `./pretrained` and several images and t
 
 ````bash
 $PATH_TO_DATASET/Combined_Dataset
-├────Training_set
-|    ├────alpha (431 images)
-|    ├────fg (431 images)
-|    ├────merged (43100 images)
-├────Test_set
-|    ├────alpha (50 images)
-|    ├────fg (50 images)
-|    ├────merged (1000 images)
-|    ├────trimaps (1000 images)
+├──── Training_set
+│    ├──── alpha (431 images)
+│    ├──── fg (431 images)
+│    └──── merged (43100 images)
+├──── Test_set
+│    ├──── alpha (50 images)
+│    ├──── fg (50 images)
+│    ├──── merged (1000 images)
+│    └──── trimaps (1000 images)
 ````
 
 ## Inference
