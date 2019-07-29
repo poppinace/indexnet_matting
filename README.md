@@ -29,7 +29,7 @@ We have included our pretrained model in `./pretrained` and several images and t
 2. Composite the dataset using provided foreground images, alpha mattes, and background images from the COCO and Pascal VOC datasets. I slightly modified the provided `compositon_code.py` to improve the efficiency, included in the `scripts` folder. Note that, since the image resolution is quite high, the dataset will be over 100 GB after composition.
 3. The final path structure used in my code looks like this:
 
-````bash
+````
 $PATH_TO_DATASET/Combined_Dataset
 ├──── Training_set
 │    ├──── alpha (431 images)
