@@ -64,7 +64,8 @@ Here is the results of IndexNet Matting and our reproduced results of Deep Matti
 * The original paper reported that there were 491 images, but the released dataset only includes 431 images. Among missing images, 38 of them were said double counted, and the other 24 of them were not released. As a result, we at least use 4.87% fewer training data than the original paper. Thus, the small differerce in performance should be normal.
 * The evaluation code (Matlab code implemented by the Deep Image Matting's author) placed in the ``./evaluation_code`` folder is used to report the final performance for a fair comparion. We have also implemented a python version. The numerial difference is subtle.
 
-## Code will be coming soon !
+## Training
+Training code is not applicable at present but may be released in the future.
 
 ## Citation
 If you find this work or code useful for your research, please cite:
