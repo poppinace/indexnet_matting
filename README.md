@@ -11,6 +11,9 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
+## Updates
+- 5 Aug 2019: Inference code of IndexNet Matting is released!
+
 ## Highlights
 - **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
 - **Memory-efficient:** IndexNet Matting builds upon MobileNetV2. It can process an image with a resolution up to 1980x1080 on a single GTX 1070;
