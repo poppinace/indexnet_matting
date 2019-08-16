@@ -13,6 +13,7 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 
 ## Updates
 - 5 Aug 2019: Inference code of IndexNet Matting is released!
+- 16 Aug 2019: The supplementary material is finalized and released!
 
 ## Highlights
 - **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
