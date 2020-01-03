@@ -4,6 +4,7 @@ import os
 import cv2 as cv
 from time import time
 from PIL import Image
+from collections import OrderedDict
 
 import torch
 import torch.nn as nn
@@ -40,14 +41,20 @@ net = hlmobilenetv2(
         use_nonlinear=True,
         use_context=True
     )
-net = nn.DataParallel(net)
+
 try:
     checkpoint = torch.load(RESTORE_FROM)
-    pretrained_dict = checkpoint['state_dict']
+    pretrained_dict = OrderedDict()
+    for key, value in checkpoint['state_dict'].items():
+        if 'module' in key:
+            key = key[7:]
+        pretrained_dict[key] = value
 except:
     raise Exception('Please download the pretrained model!')
 net.load_state_dict(pretrained_dict)
 net.to(device)
+if torch.cuda.is_available():
+    net = nn.DataParallel(net)
 
 # switch to eval mode
 net.eval()
@@ -88,7 +95,7 @@ def inference(image_path, trimap_path):
 
         image = image_alignment(image, STRIDE)
         inputs = torch.from_numpy(np.expand_dims(image.transpose(2, 0, 1), axis=0))
-        inputs = inputs.cuda()
+        inputs = inputs.to(device)
         
         # inference
         start = time()
