@@ -1,0 +1,22 @@
+# adobe image matting
+CUDA_VISIBLE_DEVICES=0 python ./scripts/hltrainval.py \
+--num-workers 4 \
+--exp indexnet_matting \
+--data-dir /media/hao/DATA/Combined_Dataset \
+--data-list ./lists/train.txt \
+--data-val-list ./lists/test.txt \
+--output-stride 32 \
+--conv-operator std_conv \
+--backbone mobilenetv2 \
+--decoder indexnet \
+--indexnet depthwise \
+--index-mode m2o \
+--use-nonlinear \
+--use-context \
+--decoder-kernel-size 5 \
+--batch-size 2 \
+--crop-size 320 \
+--num-epochs 30 \
+--learning-rate 1e-2 \
+--random-seed 6 \
+--apply-aspp
