@@ -14,7 +14,7 @@ CUDA_VISIBLE_DEVICES=0 python ./scripts/hltrainval.py \
 --use-nonlinear \
 --use-context \
 --decoder-kernel-size 5 \
---batch-size 2 \
+--batch-size 16 \
 --crop-size 320 \
 --num-epochs 30 \
 --learning-rate 1e-2 \
