@@ -82,6 +82,7 @@ Run the following command to train IndexNet Matting:
     sh train.sh
     
 - `--data-dir` should be modified to your dataset directory.
+- I was able to train the model on a single GTX 1080ti (12 GB). The training takes about 5 days. The current bottleneck appears to be the dataloader.
 
 ## Citation
 If you find this work or code useful for your research, please cite:
