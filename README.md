@@ -18,8 +18,10 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
 ## Updates
-- 5 Aug 2019: Inference code of IndexNet Matting is released!
+- 4 April 2020: Training code is released!
 - 16 Aug 2019: The supplementary material is finalized and released!
+- 5 Aug 2019: Inference code of IndexNet Matting is released!
+
 
 ## Highlights
 - **Simple and effective:** IndexNet Matting only deals with the upsampling stage but exhibits at least 16.1% relative improvements, compared to the Deep Matting baseline;
@@ -75,7 +77,11 @@ Here is the results of IndexNet Matting and our reproduced results of Deep Matti
 * The evaluation code (Matlab code implemented by the Deep Image Matting's author) placed in the ``./evaluation_code`` folder is used to report the final performance for a fair comparion. We have also implemented a python version. The numerial difference is subtle.
 
 ## Training
-Training code is not applicable at present but may be released in the future.
+Run the following command to train IndexNet Matting:
+
+    sh train.sh
+    
+- `--data-dir` should be modified to your dataset directory.
 
 ## Citation
 If you find this work or code useful for your research, please cite:
