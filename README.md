@@ -7,7 +7,7 @@
 
 This repository includes the official implementation of IndexNet Matting for deep image matting, presented in our paper:
 
-**[Indices Matter: Learning to Index for Deep Image Matting](https://arxiv.org/pdf/1908.00672.pdf)**
+**[Indices Matter: Learning to Index for Deep Image Matting](https://arxiv.org/abs/1908.00672)**
 
 Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 
@@ -18,7 +18,7 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
 ## Updates
-- 7 April 2020: A substantially extented version of this work can be found at [this url](https://arxiv.org/pdf/1908.09895v2.pdf)!
+- 7 April 2020: A substantially extented version of this work can be found from [here](https://arxiv.org/abs/1908.09895v2)!
 - 4 April 2020: Training code is released!
 - 16 Aug 2019: The supplementary material is finalized and released!
 - 5 Aug 2019: Inference code of IndexNet Matting is released!
