@@ -43,7 +43,7 @@ net = hlmobilenetv2(
     )
 
 try:
-    checkpoint = torch.load(RESTORE_FROM)
+    checkpoint = torch.load(RESTORE_FROM, map_location=device)
     pretrained_dict = OrderedDict()
     for key, value in checkpoint['state_dict'].items():
         if 'module' in key:
