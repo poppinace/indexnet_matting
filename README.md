@@ -18,7 +18,7 @@ Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2019
 <sup>2</sup>Noah's Ark Lab, Huawei Technologies
 
 ## Updates
-- 7 April 2020: A substantially extented version of this work can be found from [here](https://arxiv.org/abs/1908.09895v2)!
+- 8 June 2020: The [journal version](https://arxiv.org/abs/1908.09895v2) of this work has been accepted to TPAMI! We further report many interesting results on other dense prediction tasks and extend our insights on generic upsampling operators.
 - 4 April 2020: Training code is released!
 - 16 Aug 2019: The supplementary material is finalized and released!
 - 5 Aug 2019: Inference code of IndexNet Matting is released!
@@ -93,6 +93,13 @@ If you find this work or code useful for your research, please cite:
   author={Lu, Hao and Dai, Yutong and Shen, Chunhua and Xu, Songcen},
   booktitle={Proc. IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2019}
+}
+
+@articles{hao2020indexnet,
+  title={Index Networks},
+  author={Lu, Hao and Dai, Yutong and Shen, Chunhua and Xu, Songcen},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2020}
 }
 ```
 
