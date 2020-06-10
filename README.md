@@ -95,7 +95,7 @@ If you find this work or code useful for your research, please cite:
   year={2019}
 }
 
-@articles{hao2020indexnet,
+@article{hao2020indexnet,
   title={Index Networks},
   author={Lu, Hao and Dai, Yutong and Shen, Chunhua and Xu, Songcen},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
