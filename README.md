@@ -1,8 +1,8 @@
 # IndexNet Matting
 
 <p align="center">
-  <img src="kid.png" width="425" title="Original Image"/>
-  <img src="matte.png" width="425" title="IndexNet Matting"/>
+  <img src="kid.png" width="350" title="Original Image"/>
+  <img src="matte.png" width="350" title="IndexNet Matting"/>
 </p>
 
 This repository includes the official implementation of IndexNet Matting for deep image matting, presented in our paper:
