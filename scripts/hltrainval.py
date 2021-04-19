@@ -157,6 +157,9 @@ def get_arguments():
 def save_checkpoint(state, snapshot_dir, filename='.pth.tar'):
     torch.save(state, '{}/{}'.format(snapshot_dir, filename))
 
+def worker_init_fn(worker_id):                                                          
+    np.random.seed(np.random.get_state()[1][0] + worker_id)
+
 # implementation of the composition loss and alpha loss
 def weighted_loss(pd, gt, wl=0.5, epsilon=1e-6):
     bs, _, h, w = pd.size()
@@ -303,7 +306,8 @@ def main():
     if torch.cuda.is_available():
         torch.cuda.manual_seed(args.random_seed)
     torch.manual_seed(args.random_seed)
-    np.random.seed(args.random_seed)
+    # fix random seed bugs in numpy
+    # np.random.seed(args.random_seed) 
 
     # instantiate dataset
     dataset = AdobeImageMattingDataset
@@ -426,6 +430,7 @@ def main():
         batch_size=args.batch_size,
         shuffle=True,
         num_workers=args.num_workers,
+        worker_init_fn=worker_init_fn,
         pin_memory=True,
         drop_last=True
     )
@@ -452,6 +457,7 @@ def main():
     scheduler = MultiStepLR(optimizer, milestones=[20, 26], gamma=0.1, last_epoch=resume_epoch)
     for epoch in range(start_epoch, args.num_epochs):
         scheduler.step()
+        np.random.seed()
         # train
         train(net, train_loader, optimizer, epoch+1, scheduler, args)
         # val
