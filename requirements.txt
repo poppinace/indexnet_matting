@@ -1,7 +1,7 @@
 torch
 opencv-python
 numpy
-PIL
+Pillow
 matplotlib
 scipy
-skimage
+scikit-image
